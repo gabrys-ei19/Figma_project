@@ -9,7 +9,7 @@ body {
 /*########## header - logo ##########*/
 
 .header{
-    height: 34%;
+    height: 34vh;
 }
 
 header {
@@ -33,6 +33,11 @@ header {
     padding-bottom: 15px;
     border-bottom-left-radius: 5px;
 }
+@media (max-width: 722px) {
+    .napis{
+      font-size: 50px;
+    }
+  }
 
 .img {
     padding-left: 50px;
@@ -43,6 +48,11 @@ header {
     background-color: #ffffff;
     border-radius: 5px;
 }
+@media (max-width: 1162px) {
+    .img {
+      display: none;
+    }
+  }
 
 
 /*########## menu główne ##########*/
@@ -138,10 +148,18 @@ nav ol>li>ul>li:hover>a {
     width: 100%;
     display: flex;
     height: min-content;
-    height: 50%;
+    height: 49vh;
     margin-top: 10px;
     justify-content: space-around;
 }
+@media (max-width: 1026px) {
+    #container {
+      height: 36vh;
+    }
+    .header {
+        height: 45vh;
+    }
+  }
 
 main{
     background-color: #fff;
@@ -152,6 +170,12 @@ main{
     margin: 2px;
     overflow: scroll;
     overflow-x: hidden;
+}
+@media (min-width: 767px){
+    main {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }
 
 table {
@@ -165,6 +189,11 @@ aside{
     border-radius: 5px;
     margin: 2px;
 }
+@media (max-width: 767px) {
+    aside {
+      display: none;
+    }
+  }
 
 .add {
     min-height: 98%;
@@ -174,7 +203,7 @@ aside{
 
 footer {
     width: 100%;
-    height: 14%;
+    height: 14vh;
     background-color: #135425;
     color: #fff;
     text-align: center;
