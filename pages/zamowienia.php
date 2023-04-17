@@ -16,8 +16,8 @@
             foreach($klient as $dane){
                 echo $dane['imie'].' '.$dane['nazwisko'].', ';
             };
-            $bilety = 'SELECT `czas`, `ulga` FROM bilety WHERE `ID_kl` = '.$wiersz['ID_biletu'].';';
-            $bilecik = mysqli_query($link, $bilety);
+            $bileciki = 'SELECT `czas`, `ulga` FROM `bilety` WHERE `ID_b` = '.$wiersz['ID_biletu'].';';
+            $bilecik = mysqli_query($link, $bileciki);
             foreach($bilecik as $daneb){
                 if ($daneb['czas'] == '00:20:00') {
                     $bil = '20 minut';
@@ -33,6 +33,16 @@
                     $ulga = 'normalny';
                 }
                 echo 'bilet: '.$bil.' '.$ulga.'<br>';
+            };
+            $linia = 'SELECT `numer_l`, `ID_trasy` FROM `linie` WHERE `ID_l` = '.$wiersz['ID_lini'].';';
+            $linie = mysqli_query($link, $linia);
+            foreach($linie as $bus){
+                echo 'Numer lini: '.$bus['numer_l'].', ';
+                $trasa = 'SELECT `p_poczatkowy`, `p_koncowy` FROM `trasy` WHERE `ID_t` = '.$bus['ID_trasy'].';';
+                $trasy = mysqli_query($link, $trasa);
+                foreach($trasy as $przystanki){
+                    echo 'przystanek początkowy: '.$przystanki['p_poczatkowy'].', przystanek końcowy: '.$przystanki['p_koncowy'].'<br><br>';
+                };
             };
         }; 
     ?>
