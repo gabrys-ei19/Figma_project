@@ -103,15 +103,7 @@ CREATE TABLE `klienci` (
   `wiek` smallint(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
---
--- Zrzut danych tabeli `klienci`
---
-
-INSERT INTO `klienci` (`ID_kl`, `imie`, `nazwisko`, `wiek`) VALUES
-(22, 'Sebastian', 'Gabryś', 18),
-(23, 'Jakub', 'Kuś', 18),
-(31, 'Stahoo', 'Kępiński', 17),
-(32, 'Agnieszka', 'Gabrys', 43);
+-- Klientów do bazy nalerzy dodać przez formularz
 
 -- --------------------------------------------------------
 
@@ -149,17 +141,7 @@ CREATE TABLE `przejazdy` (
   `ID_lini` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
---
--- Zrzut danych tabeli `przejazdy`
---
-
-INSERT INTO `przejazdy` (`ID_p`, `ID_klienta`, `ID_biletu`, `ID_lini`) VALUES
-(1, 22, 2, 2),
-(2, 32, 4, 3),
-(3, 23, 1, 1),
-(4, 23, 3, 3),
-(5, 31, 2, 1),
-(6, 31, 3, 3);
+-- Dane przejazdów nalerzy dodać do bazy przez formularz
 
 -- --------------------------------------------------------
 
@@ -243,43 +225,43 @@ ALTER TABLE `trasy`
 -- AUTO_INCREMENT dla tabeli `autobusy`
 --
 ALTER TABLE `autobusy`
-  MODIFY `ID_a` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID_a` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 
 --
 -- AUTO_INCREMENT dla tabeli `bilety`
 --
 ALTER TABLE `bilety`
-  MODIFY `ID_b` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `ID_b` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 
 --
 -- AUTO_INCREMENT dla tabeli `kierowcy`
 --
 ALTER TABLE `kierowcy`
-  MODIFY `ID_k` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID_k` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 
 --
 -- AUTO_INCREMENT dla tabeli `klienci`
 --
 ALTER TABLE `klienci`
-  MODIFY `ID_kl` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `ID_kl` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 
 --
 -- AUTO_INCREMENT dla tabeli `linie`
 --
 ALTER TABLE `linie`
-  MODIFY `ID_l` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID_l` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 
 --
 -- AUTO_INCREMENT dla tabeli `przejazdy`
 --
 ALTER TABLE `przejazdy`
-  MODIFY `ID_p` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `ID_p` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 
 --
 -- AUTO_INCREMENT dla tabeli `trasy`
 --
 ALTER TABLE `trasy`
-  MODIFY `ID_t` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID_t` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
