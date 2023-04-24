@@ -51,10 +51,13 @@
         </tr>
     </table>
     <br>
+    Zapraszamy również na stronę sponsora i dostawcy usług serwisowych - <a class="zsti" href="https://zsti.gliwice.pl" target="blank">ZSTI</a>.
+    <br><br>
     Jeśli masz jakieś pytania lub wątpliwości, prosimy o kontakt z naszym biurem obsługi klienta w godzinach pracy. Jesteśmy dostępni przez telefon oraz e-mail. Chętnie udzielimy Ci wszelkich informacji i pomocy w kwestiach związanych z transportem miejskim w Obrębie Zadupie.
     <br><br>
     Jeśli chcesz złożyć skargę lub sugestię dotyczącą naszych usług, możesz zrobić to również poprzez e-mail lub telefonicznie. Staramy się odpowiedzieć na wszystkie wiadomości jak najszybciej i jak najskuteczniej rozwiązać wszelkie problemy.
     <br><br>
-    Dziękujemy za korzystanie z naszych usług i czekamy na Twoje pytania i sugestie!    
+    Dziękujemy za korzystanie z naszych usług i czekamy na Twoje pytania i sugestie! 
+    <br>   
 </main>
 </div>
