@@ -9,7 +9,7 @@ body {
 /*########## header - logo ##########*/
 
 .header{
-    height: 34vh;
+    height: 26vh;
 }
 
 header {
@@ -148,16 +148,25 @@ nav ol>li>ul>li:hover>a {
     width: 100%;
     display: flex;
     height: min-content;
-    height: 49vh;
+    height: 58vh;
     margin-top: 10px;
     justify-content: space-around;
 }
 @media (max-width: 1026px) {
     #container {
-      height: 36vh;
+      height: 52vh;
     }
     .header {
-        height: 45vh;
+        height: 32vh;
+    }
+
+    @media (max-width: 606px) {
+        #container {
+      height: 48vh;
+    }
+    .header {
+        height: 36vh;
+    }
     }
   }
 
@@ -199,6 +208,12 @@ aside{
     min-height: 98%;
     min-width: 118px;
     max-height: 99%;
+}
+
+.zsti {
+    color: #135425;
+    text-decoration: none;
+    font-style: italic;
 }
 
 footer {
