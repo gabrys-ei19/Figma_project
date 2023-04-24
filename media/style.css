@@ -152,20 +152,20 @@ nav ol>li>ul>li:hover>a {
     margin-top: 10px;
     justify-content: space-around;
 }
-@media (max-width: 1026px) {
+@media (max-width: 1213px) {
     #container {
-      height: 52vh;
+      height: 54vh;
     }
     .header {
-        height: 32vh;
+        height: 30vh;
     }
 
-    @media (max-width: 606px) {
+    @media (max-width: 607px) {
         #container {
-      height: 48vh;
+      height: 50vh;
     }
     .header {
-        height: 36vh;
+        height: 34vh;
     }
     }
   }
