@@ -115,7 +115,7 @@ CREATE TABLE `linie` (
   `ID_l` int(11) NOT NULL,
   `numer_l` int(11) NOT NULL,
   `ID_kierowcy` int(11) NOT NULL,
-  `ID_autobysu` int(11) NOT NULL,
+  `ID_autobusu` int(11) NOT NULL,
   `ID_trasy` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
@@ -123,7 +123,7 @@ CREATE TABLE `linie` (
 -- Zrzut danych tabeli `linie`
 --
 
-INSERT INTO `linie` (`ID_l`, `numer_l`, `ID_kierowcy`, `ID_autobysu`, `ID_trasy`) VALUES
+INSERT INTO `linie` (`ID_l`, `numer_l`, `ID_kierowcy`, `ID_autobusu`, `ID_trasy`) VALUES
 (1, 14, 1, 2, 2),
 (2, 48, 2, 3, 3),
 (3, 111, 3, 1, 1);
